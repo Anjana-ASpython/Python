@@ -1,0 +1,28 @@
+fruits = {}  # dictionary to store fruit details
+
+n = int(input("Enter number of fruits you want to add: "))
+
+for i in range(n):
+    name = input(f"\nEnter fruit name {i+1}: ")
+    qty = int(input("Enter quantity: "))
+    price = float(input("Enter price per unit: "))
+    discount = float(input("Enter discount (%) on this fruit: "))
+
+    fruits[name] = {
+        "quantity": qty,
+        "price": price,
+        "discount": discount,
+    }
+
+total = 0
+
+for fruit, details in fruits.items():
+    qty = details["quantity"]
+    price = details["price"]
+    discount = details["discount"]
+ 
+
+
+    print(f"{fruit} → Qty: {qty}, Price: {price}, Discount: {discount}%")
+
+
